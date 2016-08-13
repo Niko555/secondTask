@@ -1,0 +1,24 @@
+﻿
+#wrapper{
+    margin: 5%;
+}
+
+aside{
+    height: 35px;
+}
+
+.btn{
+    margin: 3%;
+    clear: both;
+}
+
+.edit{
+    color: blue;
+}
+
+.edit:hover{
+    color: blue;
+    text-decoration: underline;
+}
+
+
