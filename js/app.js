@@ -3,16 +3,10 @@
 var app = angular.module('mainModule', []);
 
 app.controller('mainCtrl', function ($scope, storageService) {
-    var dummy = [];
     $scope.value = '';
     $scope.editId = 0;
     $scope.editFlag = false;
     $scope.items = storageService.RestoreState();
-
-    if(!angular.isArray($scope.items)){
-        storageService.SaveState(dummy);
-        $scope.items = storageService.RestoreState();
-    }
 
     $scope.RemoveItem = function (value) {
         angular.forEach($scope.items, function (item, index) {
