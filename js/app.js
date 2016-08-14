@@ -60,7 +60,7 @@ app.controller('mainCtrl', function ($scope, storageService) {
         var maxId;
         var arrayOfId = [];
 
-        angular.forEach($scope.items, function (item, index) {
+        angular.forEach($scope.items, function (item) {
             arrayOfId.push(item.id);
         });
 
