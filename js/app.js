@@ -36,7 +36,7 @@ app.controller('mainCtrl', function ($scope, storageService) {
         $scope.value = '';
         $scope.editId = 0;
         $scope.editFlag = false;
-    }
+    };
 
     // Handler to edit or add on item
     $scope.EditHandler = function () {
